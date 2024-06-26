@@ -2,10 +2,6 @@ a {
     text-decoration: none;
 }
 
-html, body {
-    height: 100%;
-}
-
 .container {
 max-width: 1142px;
 margin: 0 auto;
@@ -67,9 +63,8 @@ z-index: -1;
 .hero {
     display:flex;
     align-items: center;
-    height: calc(100vh - 98.4px);
     gap: 20px;
-
+    position: relative;
 }
 
 .hero-text {
@@ -81,7 +76,7 @@ z-index: -1;
 }
 
 .hero-bg {
-    height: 100%;
+    height: clamp(493px, 50vw, 852px);
     flex-basis: calc(40% - 20px);
     background: linear-gradient(90.00deg, rgb(251, 241, 56),rgba(253, 249, 182, 0.45) 145.234%);
     opacity: 0.2;
@@ -89,6 +84,65 @@ z-index: -1;
 
 .hero img {
     position: absolute;
-    width: 100%;
-    max-width: 996px;
+    right: -10vw;
+    bottom: 0;
+    width: clamp(399px, 50vw, 996px);
+}
+
+@media (max-width: 1500px) {
+    .hero img {
+        position: absolute;
+        right: -2vw;
+    }
+}
+
+@media (max-width: 1220px) {
+    .hero img {
+        position: absolute;
+        right: 5px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 309px 73px 281px;
+    grid-template-areas: "a b c" "d b f" "d e f";
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid #000;
+}
+
+.item:nth-child(1) {
+    grid-area: a;
+}
+
+.item:nth-child(2) {
+    grid-area: b;
+}
+
+.item:nth-child(3) {
+    grid-area: c;
+}
+
+.item:nth-child(4) {
+    grid-area: d;
+}
+
+.item:nth-child(5) {
+    grid-area: e;
+}
+
+.item:nth-child(6) {
+    grid-area: f;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 224);
+        grid-template-areas:  "a b " "c b " "e f";
+    }
 }
