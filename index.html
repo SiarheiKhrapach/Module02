@@ -4,45 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="fonts/Montserrat-Bold.ttf">
-    <link href="fonts/Montserrat-Bold.ttf">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link href="fonts/Montserrat-Bold.ttf">
+    <link href="fonts/Montserrat-Regular.ttf">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="header-wrapper">
-            <div class="logo"></div>
+            <div class="header">
+                <div class="logo"></div>
                 <nav class="nav">
                     <a href="#" class="nav-link">Мероприятия</a>
                     <a href="#" class="nav-link">Расписание</a>
                     <a href="#" class="nav-link">О компании</a>
                 </nav>
-                    <a href="#" class="mail">info@freefit.com <span class="ellipse"></span></a>
+                <a href="#" class="mail">info@freefit.com <span class="circle"></span></a>
             </div>
         </div>
-    </header>
-    <div class="container">
-        <div class="hero">
-            <div class="hero-text">
-                <h1>онлайн тренировки любой сложности</h1>
-                <p><span>&gt;&nbsp;15</span> <span>тренировок</span></p>
-                <div class="addittionaly">
-                    <p>в области спортивной физиологии и нутрициологии</p>
-                    <button>Узнать подробнее</button>
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>онлайн тренировки любой сложности</h1>
+                    <p class="hero-discription"><span>&gt;&nbsp;15</span> <span>тренировок</span></p>
+                    <div class="addittionaly">
+                        <p>в области спортивной <br> физиологии и нутрициологии</p>
+                        <button class="button">Узнать подробнее</button>
+                    </div>
+                    <a href="#">
+                        <div class="circle-button">
+                            <div class="arrow"></div>
+                        </div>
+                    </a>    
+                </div>
+                <div class="hero-bg"></div>
+                <img  src="images/Image 1 screen@2x.png" alt="">
+            </div>
+        </div>
+         <div class="container">
+            <div class="date-info">
+                <h2 class="info">Расписание <br> тренировок</h2>
+                <h2 class="date">22 - 28 июня</h2>
+            </div>
+         </div>
+            <div class="container-grid">
+                <div class="grid">
+                    <div class="item">
+                        <p class="time-date">22 июня, 10:00</p>
+                        <img class="body-icon" src="images/grid/body.svg" alt="">
+                        <p class="discription-trening">Функциональный тренинг</p>
+                    </div>
+                    <div class="item">Body sculpt</div>
+                    <div class="item">L.A.B.</div>
+                    <div class="item">Силовой микс</div>
+                    <div class="item">Дыхательные практики</div>
+                    <div class="item">Комплексная разминка</div>
                 </div>
             </div>
-            <div class="hero-bg"></div>
-            <img  src="images/Image 1 screen@2x.png" alt="">
-        </div>
-    </div>
-        <div class="grid">
-            <div class="item">Функциональный тренинг</div>
-            <div class="item">Функциональный тренинг</div>
-            <div class="item">Функциональный тренинг</div>
-            <div class="item">Функциональный тренинг</div>
-            <div class="item">Функциональный тренинг</div>
-            <div class="item">Функциональный тренинг</div>
-    </div>
+            
+    </header>
 </body>
 </html>

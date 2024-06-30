@@ -1,148 +1,263 @@
-a {
-    text-decoration: none;
+:root {
+  --yelow: #FBF138;
+  --dark: #2B3541;
+
+  --montserrat: "Montserrat", sans-serif;
 }
 
 .container {
-max-width: 1142px;
-margin: 0 auto;
-padding-left: 15px;
-padding-right: 15px;
+  width: 100%;
+  max-width: 1143px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 92px;
+  padding-top: 52px;
+  padding-bottom: 27px;
 }
 
 .logo {
-    width: 97px;
-    height: 30px;
-    background-image: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.header-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding-top: 50px;
-    padding-bottom: 27px;
-
+  display: block;
+  height: 30px;
+  width: 97px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .nav {
-    display: flex;
-    gap: 55px;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
+  flex-grow: 1;
+  display: flex;
+  gap: 54px;
 }
 
 .nav-link {
-    color: rgb(43, 53, 65);
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+ font-family: "Montserrat", sans-serif;
+}
+
+.nav-link:hover {
+  color: var(--yelow);
+  transition: 0.2s;
 }
 
 .mail {
-color: rgb(43, 53, 65);
-font-family: Montserrat;
+display: flex;
+align-items: center;
+text-decoration: none;
+color: var(--dark);
 font-size: 16px;
 font-weight: 700;
-line-height: 150%;
-text-align: left;
-padding-left: 340px;
+font-family: "Montserrat", sans-serif;
 }
 
-.ellipse {
-position: absolute;
-width: 25px;
-height: 25px;
-left: 1371px;
-top: 58px;
-border-radius: 100%;
-box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
-background: rgb(251, 241, 56);
-z-index: -1;
+.circle {
+  height: 25px;
+  width: 25px;
+  background-color: var(--yelow);
+  border-radius: 100%;
+  position: relative;
+  right: 132px;
+  z-index: -1;
+  box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
 }
 
 .hero {
-    display:flex;
-    align-items: center;
-    gap: 20px;
-    position: relative;
+  display:flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
 }
 
 .hero-text {
-    flex-basis: 60%;
+  flex-basis: 60%;
 }
 
 .hero-text h1 {
-    font-size: clamp(26px, 4.5vw,48px);
+  width: 632px;
+  height: 122px;
+  color: var(--dark);
+  font-family: var(--montserrat);
+  font-size: clamp(26px, 4.5vw,48px);
+}
+
+.hero-discription {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--montserrat);
+  color: var(--dark);
+}
+
+.addittionaly {
+  font-size: 18px;
+  font-family: var(--montserrat);
+  font-weight: 400;
+  padding-left: 91px;
+  color: var(--dark);
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+  color: var(--dark);
+  text-transform: uppercase;
+  width: 252px;
+  height: 64px;
+  background-color: var(--yelow);
+  box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
+  border: none;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(15, 240, 101)
 }
 
 .hero-bg {
-    height: clamp(493px, 50vw, 852px);
-    flex-basis: calc(40% - 20px);
-    background: linear-gradient(90.00deg, rgb(251, 241, 56),rgba(253, 249, 182, 0.45) 145.234%);
-    opacity: 0.2;
+  height: clamp(493px, 50vw, 852px);
+  flex-basis: calc(40% - 20px);
+  background: linear-gradient(90.00deg, rgb(251, 241, 56),rgba(253, 249, 182, 0.45) 145.234%);
+  opacity: 0.2;
 }
 
 .hero img {
-    position: absolute;
-    right: -10vw;
-    bottom: 0;
-    width: clamp(399px, 50vw, 996px);
+  position: absolute;
+  right: -10vw;
+  bottom: 0;
+  width: clamp(399px, 50vw, 996px);
 }
 
+.circle-button {
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  border: 3px solid var(--dark);
+  border-radius: 100%;
+  display: flex;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
+
+.arrow {
+  width: 21px;
+  height: 13px;
+  background-image: url(../images/arrow.svg);
+}
+
+.date-info {
+  padding-top: 158px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  font-family: var(--montserrat);
+  font-size: 40px;
+  font-family: 700;
+  color: var(--dark);
+}
+
+.date {
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--dark);
+}
+
+
+
 @media (max-width: 1500px) {
-    .hero img {
-        position: absolute;
-        right: -2vw;
-    }
+  .hero img {
+      position: absolute;
+      right: -2vw;
+  }
 }
 
 @media (max-width: 1220px) {
-    .hero img {
-        position: absolute;
-        right: 5px;
-    }
+  .hero img {
+      position: absolute;
+      right: 5px;
+  }
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 309px 73px 281px;
-    grid-template-areas: "a b c" "d b f" "d e f";
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 309px 73px 281px;
+  grid-template-areas: "a b c" "d b f" "d e f";
+  gap: 20px;
 }
 
 .item {
-    border: 1px solid #000;
+  position: relative;
+  border: 1px solid var(--dark);
+}
+
+.time-date {
+  margin: 0 auto;
+  padding: 20px 30px;
+  text-align: right;
+  font-family: var(--montserrat);
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.body-icon {
+  position: absolute;
+  left: 30px;
+  bottom: 83px;
+}
+
+.discription-trening {
+  font-family: var(--montserrat);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
 }
 
 .item:nth-child(1) {
-    grid-area: a;
+  grid-area: a;
 }
 
 .item:nth-child(2) {
-    grid-area: b;
+  grid-area: b;
 }
 
 .item:nth-child(3) {
-    grid-area: c;
+  grid-area: c;
 }
 
 .item:nth-child(4) {
-    grid-area: d;
+  grid-area: d;
 }
 
 .item:nth-child(5) {
-    grid-area: e;
+  grid-area: e;
 }
 
 .item:nth-child(6) {
-    grid-area: f;
+  grid-area: f;
 }
 
 @media (max-width: 1000px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 224);
-        grid-template-areas:  "a b " "c b " "e f";
-    }
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 224);
+      grid-template-areas:  "a b " "c b " "e f";
+  }
 }
