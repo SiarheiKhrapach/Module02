@@ -299,31 +299,32 @@ font-family: var(--montserrat);
   cursor: pointer;
 }
 
-.aside {
-  position: absolute;
+.aside-container {
   margin: 0 auto;
-  margin-top: 162px;
   max-width: 100%;
-  width: 1920px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 348px;
+  width: 1920px;
+  margin-top: 162px;
   background-color: rgb(243, 243, 243);
 }
 
-.subscription {
-  padding-top: 80px;
-  padding-left: 667px;
-  color: var(--dark);
+.subscribe {
+  text-align: center;
   font-family: var(--montserrat);
+  padding-top: 80px;
   font-size: 40px;
   font-weight: 700;
-  display: flex;
   position: relative;
 }
 
 .crcl {
   height: 53px;
   width: 53px;
-  background-color: var(--yelow);
-  border-radius: 100%;
+  background-color: #FBF138;
+  position: absolute;
+  left: 634px;
+
   
 }
