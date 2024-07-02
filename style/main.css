@@ -5,6 +5,8 @@
   --montserrat: "Montserrat", sans-serif;
 }
 
+/* Header */
+
 .container {
   width: 100%;
   max-width: 1143px;
@@ -28,6 +30,17 @@
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.burger-btn-menu {
+  display: none;
+  Width: 29px;
+  Height: 22px;
+  background-image: url(../images/burger\ menu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
 }
 
 .nav {
@@ -69,6 +82,8 @@ font-family: var(--montserrat);
   z-index: -1;
   box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
 }
+
+/* Main */
 
 .hero {
   display:flex;
@@ -403,15 +418,12 @@ font-family: var(--montserrat);
   background-image: url(../images/checkbox.svg);
 }
 
-
+/* Aside */
 
 .aside-container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   height: 348px;
   width: 1920px;
   margin-top: 162px;
@@ -470,10 +482,6 @@ font-family: var(--montserrat);
   background-color: rgb(15, 240, 101)
 }
 
-.checkbox{
-  
-}
-
 .confirm_txt {
   top: 14px;
   font-family: var(--montserrat);
@@ -522,6 +530,8 @@ font-family: var(--montserrat);
 .btn_footer:hover {
   background-color: rgb(15, 240, 101);
 }
+
+/* Footer */
 
 .footer_container{
   width: 1142px;
@@ -666,4 +676,56 @@ font-family: var(--montserrat);
   right: 155px;
   z-index: -1;
   box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
+}
+
+@media (max-width: 935px) {
+  .header {
+    gap: 38px;
+    padding-top: 35px;
+    padding-bottom: 40px
+  }
+  .nav {
+    display: none;
+    }
+  .nav._modal {
+    display: block;
+  }
+
+  .burger-btn-menu {
+    display: block;
+    flex-grow: 1;
+  }
+  .modal {
+    padding: 93px 15px;
+    background-color: rgb(243, 243, 243);
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 283px;
+    max-width: 587px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    text-decoration: double;
+  }
+}
+.model-close {
+  display: block;
+  height: 19px;
+  width: 20px;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 34px;
+  left: 557px;
 }
