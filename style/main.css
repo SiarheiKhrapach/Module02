@@ -523,46 +523,95 @@ font-family: var(--montserrat);
   background-color: rgb(15, 240, 101);
 }
 
-.footer_img {
-  position: absolute;
-  padding-left: 550px;
+.footer_container{
+  width: 1142px;
+  height: 513px;
+  padding-top: 158px;
+  width: 100%;
+  max-width: 1143px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
 }
 
-.item_ftr {
+.footer_img {
+position: absolute;
+right: 0px;
+}
+
+.info_comp {
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: var(--montserrat);
+  color: var(--dark);
+}
+
+.discription-company {
+  display: block;
+  margin-right: 650px;
+  font-family: var(--montserrat);
+  color: var(--dark);
+  font-size: 18px;
+  padding-bottom: 34px;
+}
+
+.company_btn {
+  width: 225px;
+  height: 65px;
+  text-transform: uppercase;
+  background-color: var(--yelow);
+  border: none;
+  top: 369px;
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.company_btn:hover {
+  background-color: rgb(15, 240, 101);
+}
+
+.info_discription {
   display: flex;
   justify-content: space-between;
+  padding-top: 140px;
+  gap: 82px;
   padding-left: 0px;
-  gap: 67px;
-  padding-bottom: 170px;
 }
 
-.ftr_item {
-  padding-top: 140px;
-  list-style-type: none;
+.dscrpt_info {
+  font-family: var(--montserrat);
   color: var(--dark);
   font-size: 18px;
   font-weight: 700;
-  font-family: var(--montserrat);
+  list-style-type: none;
 }
 
-.item_text {
+.txt {
   font-family: var(--montserrat);
   color: var(--dark);
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   opacity: 0.5;
 }
 
-.footer-header{
+.ftr-container {
   margin: 0 auto;
-  max-width: 100%;
   height: 149px;
   width: 1920px;
+  margin-top: 170px;
   background-color: rgb(243, 243, 243);
-  
 }
 
-.header {
+.container-ftr {
+  max-width: 1143px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-header {
   display: flex;
   align-items: center;
   gap: 92px;
@@ -570,7 +619,7 @@ font-family: var(--montserrat);
   padding-bottom: 27px;
 }
 
-.logo_footer {
+.footer-logo {
   display: block;
   height: 30px;
   width: 97px;
@@ -579,13 +628,13 @@ font-family: var(--montserrat);
   background-size: contain;
 }
 
-.nav_footer {
+.footer-nav {
   flex-grow: 1;
   display: flex;
   gap: 90px;
 }
 
-.nav-link_ftr {
+.footer-nav-link {
   color: var(--dark);
   text-decoration: none;
   font-weight: 400;
@@ -593,12 +642,12 @@ font-family: var(--montserrat);
   font-family: "Montserrat", sans-serif;
 }
 
-.nav-link_ftr:hover {
+.footer-nav-link:hover {
   color: var(--yelow);
   transition: 0.2s;
 }
 
-.mail {
+.footer-mail {
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -606,16 +655,15 @@ color: var(--dark);
 font-size: 16px;
 font-weight: 700;
 font-family: var(--montserrat);
-z-index: 1;
 }
 
-.circle_footer {
+.footer-circle {
   height: 25px;
   width: 25px;
   background-color: var(--yelow);
   border-radius: 100%;
   position: relative;
   right: 155px;
-  z-index: 2;
+  z-index: -1;
   box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
 }
