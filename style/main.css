@@ -277,11 +277,12 @@ font-family: var(--montserrat);
   grid-area: f;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .grid {
+    padding-top: 39px;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 224);
-      grid-template-areas:  "a b " "c b " "e f";
+      grid-template-rows: repeat(3, 224px);
+      grid-template-areas:  "a b " "c d " "e f";
   }
 }
 
@@ -576,18 +577,18 @@ right: 0px;
   font-family: var(--montserrat);
   font-weight: 700;
   font-size: 16px;
+  transition: 0.3s;
 }
 
 .company_btn:hover {
   background-color: rgb(15, 240, 101);
 }
 
-.info_discription {
+.info_discription_container {
+  padding-top: 140px;
   display: flex;
   justify-content: space-between;
-  padding-top: 140px;
-  gap: 82px;
-  padding-left: 0px;
+  gap: 67px;
 }
 
 .dscrpt_info {
@@ -595,7 +596,6 @@ right: 0px;
   color: var(--dark);
   font-size: 18px;
   font-weight: 700;
-  list-style-type: none;
 }
 
 .txt {
@@ -690,6 +690,9 @@ font-family: var(--montserrat);
   .nav._modal {
     display: block;
   }
+  .nav-link::after {
+    display: none;
+  }
 
   .burger-btn-menu {
     display: block;
@@ -714,18 +717,96 @@ font-family: var(--montserrat);
     flex-direction: column;
     padding-bottom: 40px;
     text-decoration: double;
+    border-bottom: 1px solid;  
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-}
-.model-close {
-  display: block;
-  height: 19px;
-  width: 20px;
-  background-image: url(../images/close.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 34px;
-  left: 557px;
+  .model-close {
+    display: block;
+    height: 19px;
+    width: 20px;
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 34px;
+    right: 10px;
+  }
+  .hero-text {
+    flex-basis: 58%;
+    padding-bottom: 34px;
+  }
+  .hero-text h1 {
+    text-transform: uppercase;
+    top: 0px;
+    position: absolute;
+    width: 359px;
+    height: 70px;
+    font-size: clamp(26px, 3vw,48px);
+} 
+  .hero-discription {
+    font-size: 26px;
+  }
+  .addittionaly {
+    font-size: 16px;
+    padding-left: 0px;
+    padding-bottom: 100px;
+  }
+  .button {
+   margin-top: 40px;
+   position: absolute;
+  }
+  .circle-button {
+    width: 40px;
+    height: 40px;
+  }
+  .circle-button {
+    top: 389px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+  .date-info {
+    padding-top: 67px;
+    padding-bottom: 0px;
+  }
+  .aside-container {
+    height: 348px;
+    width: 768px;
+    margin-top: 97px;
+    background-color: rgb(243, 243, 243);
+  }
+  .footer_container {
+    height: 358px;
+    max-width: 100%;
+    padding-top: 60px;
+    max-width: 738px;
+  }
+  .discription-company {
+  margin-right: 416px;
+  }
+  .footer_img {
+  max-width: 100%;
+  width: 382px;
+  height: 358px;
+  }
+  .info_discription_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+    padding-top: 62px;
+    
+  }
+  .info_discription {
+    padding-right: 100px;
+  }
+  .container-ftr {
+    margin-top: 76px;
+  }
+  .ftr-container {
+    width: 768px;
+    height: 70px;
+  }
 }
