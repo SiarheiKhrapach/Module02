@@ -623,13 +623,27 @@ z-index: 9999;
   
   .modal-logo {
   display: block;
-  height: 30px;
-  width: 97px;
+  height: 24px;
+  width: 78px;
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   }
-
+  .nav-link-modal {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  width: 565px;
+  border-bottom: 1px solid rgb(43, 53, 65, .2);
+  padding-bottom: 19.5px;
+  }
+  .nav-link-modal:last-child {
+    border-bottom: none;
+    position: absolute;
+    padding-top: 214px;
+  }
   .modal {
     display: block;
     padding: 93px 15px;
@@ -894,7 +908,15 @@ z-index: 9999;
   font-family: var(--montserrat);
   opacity: 0.5;
 }
-.footer-nav {
+.fb-container {
   display: flex;
+  justify-content: flex-end;
 }
+.footer-nav {
+  margin-right: 29px;
+  gap: 40px;
+}
+.nav-link-modal {
+  width: 328px;
+  }
 }
