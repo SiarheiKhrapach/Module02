@@ -1,6 +1,6 @@
 // Smooth Scroll
       
-const links = document.querySelectorAll(".grid");
+const links = document.querySelectorAll(".circle-button");
 
 for (const link of links) {
 link.addEventListener("click", clickHandler);
