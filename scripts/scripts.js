@@ -1,6 +1,8 @@
 // Smooth Scroll
       
-const links = document.querySelectorAll(".circle-button");
+const links = document.querySelectorAll(".nav-link");
+
+const links2 = document.querySelectorAll(".circle-button");
 
 for (const link of links) {
 link.addEventListener("click", clickHandler);
