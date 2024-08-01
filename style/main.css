@@ -57,9 +57,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.nav-link:hover {
-  color: var(--yelow);
-  transition: 0.2s;
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark);
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  background-color: var(--dark);
 }
 
 .mail {
@@ -136,7 +145,8 @@ font-family: var(--montserrat);
 }
 
 .button:hover {
-  background-color: rgb(15, 240, 101);
+  background-color: var(--dark);
+  color: var(--yelow);
 }
 
 .hero-bg {
@@ -319,16 +329,8 @@ max-width: 620px;
   cursor: pointer;
 }
 .button_sub:hover {
-  background-color: rgb(15, 240, 101);
-}
-.checkbox {
-  background-image:url(../images/checkbox.svg);
-}
-.checkbox:checked + label,
-.checkbox:not(:checked) + label{
-  position: relative;
-  padding-left: 2px;
-  cursor: pointer;
+  background-color: var(--dark);
+  color: var(--yelow);
 }
 
 .input_email {
@@ -359,8 +361,8 @@ max-width: 620px;
 }
 
 .sign-up-btn:hover {
-  background-color: rgb(15, 240, 101);
-  transition: 0.3s;
+  background-color: var(--dark);
+  color: var(--yelow);
   margin-top: 34px;
   cursor: pointer;
 }
@@ -397,6 +399,7 @@ max-width: 620px;
   font-weight: 700;
   border: none;
   margin-top: 34px;
+  transition: 0.3s;
 }
 
 .grl_img_container {
@@ -503,9 +506,17 @@ z-index: 9999;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
-.nav-link-footer:hover {
-  color: var(--yelow);
-  transition: 0.2s;
+.nav-link-footer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.nav-link-footer:hover::after {
+  background-color: var(--dark);
 }
 
 .footer-info {
