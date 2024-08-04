@@ -2,9 +2,19 @@
       
 const links = document.querySelectorAll(".nav-link");
 
-const links2 = document.querySelectorAll(".circle-button");
-
 for (const link of links) {
+link.addEventListener("click", clickHandler);
+}
+
+const links2 = document.querySelectorAll(".link-button");
+
+for (const link of links2) {
+link.addEventListener("click", clickHandler);
+}
+
+const links3 = document.querySelectorAll(".nav-link-footer");
+
+for (const link of links3) {
 link.addEventListener("click", clickHandler);
 }
 

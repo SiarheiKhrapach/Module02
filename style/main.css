@@ -303,7 +303,7 @@ font-family: var(--montserrat);
 }
 
 .form {
-  margin: 0 auto;
+margin: 0 auto;
 display: flex;
 gap: 20px;
 max-width: 620px;
@@ -336,16 +336,106 @@ max-width: 620px;
 .input_email {
   height: 65px;
   width: 372px;
+  font-size: 18px;
   border: 0px;
   padding-left: 19px;
   opacity: 0.5;
   background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+
+.input_email:focus {
+  border: 1px solid var(--yelow);
+}
+
+.input_email:invalid:focus {
+  border: 1px solid #AE0303;
+}
+
+.checkbox:checked,
+.checkbox:not(:checked){
+   position: absolute;
+   left:-9999px;
+}
+
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+   position: relative;
+   padding-left: 25px;
+   cursor:pointer;
+   color: rgb(43, 53, 65, 0.5);
+   font-family: var(--montserrat);
+   font-size: 11px;
+}
+
+.checkbox:checked + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: #2B3541;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+
+.checkbox:checked + label::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   transition: all .2s ease;
+   opacity: 1;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(../images/checkbox.svg);
+}
+
+.checkbox:not(:checked) + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: transparent;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+
+.checkbox:not(:checked) + label::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   transition: all .2s ease;
+   opacity: 0;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-position: 0 -12px;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../icons/check\ box\ empty.svg);
+}
+
+.radio:checked + label::before{
+   border-radius: 100%;
+}
+
+.checkbox {
+  opacity: 1;
+  width: 100px;
 }
 
 .confirm_data {
   font-family: var(--montserrat);
   text-decoration: none;
-  color: #2B3541;
+  color: var(--dark);
   font-size: 11px;
   font-weight: 400;
   opacity: 0.5;
@@ -354,9 +444,10 @@ max-width: 620px;
 .confirm_data_personal {
   font-family: var(--montserrat);
   text-decoration: none;
-  color: #2B3541;
+  color: var(--dark);
   font-size: 11px;
   font-weight: 400;
+  opacity: 0.5;
   border-bottom: 1px solid rgba(43, 53, 65, 0.39);
 }
 
