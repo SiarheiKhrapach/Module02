@@ -87,7 +87,7 @@ font-family: var(--montserrat);
   background-color: var(--yelow);
   border-radius: 100%;
   position: relative;
-  right: 142px;
+  right: 143px;
   z-index: -1;
   box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
 }
